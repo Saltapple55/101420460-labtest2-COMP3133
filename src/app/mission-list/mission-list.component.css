@@ -1,0 +1,7 @@
+mat-card{
+  border: 5px solid blue;
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: lightblue;
+}

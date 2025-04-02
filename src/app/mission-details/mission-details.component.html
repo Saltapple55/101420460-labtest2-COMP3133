@@ -1,0 +1,24 @@
+
+    <mat-card>
+        <h1>Flight {{flight.flight_number}}</h1>
+
+        <img  height="100px" width="100px" src="{{flight.mission_patch}}"/>
+        <h3>Mission name: {{flight.mission_name}}</h3>
+        <h3>Launch Year: {{flight.launch_year}}</h3>
+        <h3>Details: {{flight.details}}</h3>
+        <mat-card-content>
+        <h4>Rocket Details: </h4>
+        <p>Rocket Name: {{flight.rocket_name}}</p>
+        <p>Rocket Type: {{flight.rocket_type}}</p>
+    </mat-card-content>
+    <mat-card-content>
+
+        <h4>Links: </h4>
+        <p><a href="{{flight.article_link}}">Article Link</a></p>
+        <p> <a href="{{flight.wikipedia}}">Wikipedia</a></p>
+        <p> <a href="{{flight.video_link}}">Video Link</a></p>
+    </mat-card-content>
+
+
+    </mat-card>
+   

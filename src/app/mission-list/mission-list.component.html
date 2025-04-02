@@ -1,0 +1,18 @@
+<h1>Mission List</h1>
+<app-mission-filter (yearFilter)="onFilterFlights($event)"></app-mission-filter>
+
+ @for (flight of filteredFlights; track $index) {
+    <mat-card>
+        <img  height="75px" width="75px" src="{{flight.mission_patch}}"/>
+        <h3>Flight Num: {{flight.flight_number}}</h3>
+        <h3>Mission name: {{flight.mission_name}}</h3>
+        <h3>Launch Year: {{flight.launch_year}}</h3>
+        <button mat-raised-button color="primary" ><a [routerLink]="['/mission-details/', flight.flight_number]">Details</a> </button>
+
+    </mat-card>
+    }@empty {
+    <h2>No Posts found...</h2>
+} 
+
+
+       
